@@ -6,7 +6,135 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gym Website</title>
-    <link rel="stylesheets" href="gym.css">
+   <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+
+ body {
+     font-family: 'Ubuntu', sans-serif;
+     color: white;
+     margin: 0px;
+     padding: 0px;
+     background: url("gym.jpg");
+     background-repeat: no-repeat;
+     background-size: cover;
+ }
+
+ .left {
+     /* border: 3px solid red; */
+     display: inline-block;
+     /* display: inline-block;  this rule is used to chnage block level elemet to inline block level element */
+     position: absolute;
+     /* to make any elemnt go in middle we have to use 3 property first is position:absolute; top:the px you want and left or right: px */
+     top: 20px;
+     left: 1px;
+
+ }
+
+ .left img {
+     width: 190px;
+     border-radius: 50px;
+     margin: auto 10px;
+     /* if your logo is black you can use filter:invert(100%); to make it white and vice versa for black */
+ }
+
+ .left div {
+     text-align: center;
+ }
+
+ .mid {
+     /* border: 3px solid rgb(0, 157, 255); */
+     display: block;
+     margin: 30px auto;
+     width: 40%;
+     /* to make any element in middle give it margin: ..px auto (auto is necessary) and then width that should e less than 50 (i prefer small so) */
+ }
+
+ .right {
+     position: absolute;
+     /* border: 3px solid rgb(243, 10, 216); */
+     display: inline-block;
+     top: 20px;
+     right: 1px;
+ }
+
+ .btn {
+     font-family: 'Ubuntu', sans-serif;
+     margin: 0px 9px;
+     background-color: black;
+     color: white;
+     padding: 4px 14px;
+     border: 2px solid grey;
+     border-radius: 10px;
+     font-size: 15px;
+     cursor: pointer;
+ }
+
+ .btn:hover {
+     background-color: rgb(99, 111, 81);
+ }
+
+ .navbar li {
+     display: inline-block;
+ }
+
+ .navbar li a {
+     color: white;
+     text-decoration: none;
+     padding: 30px 20px;
+ }
+
+ .navbar li a:hover {
+     color: orangered;
+ }
+
+ .navbar li a:active {
+     color: black;
+ }
+
+ .container {
+     /* border: 4px solid white; */
+     margin: 150px 100px;
+     padding: 75px;
+     width: 30%;
+     border-radius: 10px;
+     height: 50%;
+ }
+
+ .group input {
+     font-family: 'Ubuntu', sans-serif;
+     font-size: 15px;
+     border-radius: 20px;
+     width: 450px;
+     margin: 10px auto;
+     text-align: center;
+     display: block;
+     padding: 5px;
+     border: 2px solid black;
+
+ }
+
+ img {
+     max-width: 100%;
+     height: auto;
+ }
+
+
+ .container h1 {
+
+     text-align: center;
+ }
+
+ .container button {
+     display: block;
+     width: 53%;
+     margin: 40px auto;
+
+ }
+
+ @media only screen and (max-width: 600px) {
+     /* styles for screens smaller than 600px */
+ }
+   </style>
 </head>
 
 <body>
